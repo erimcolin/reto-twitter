@@ -15,7 +15,8 @@ function twittear(event) {
      divContainer.appendChild(parraf);
      newParraf.appendChild(divContainer);
      divContainer.classList.add("content");
-     texto.value = "";
+     text.value = "";
+     letterCount.value = 140;
      parraf.style.marginLeft = '14px';
    }
 };
