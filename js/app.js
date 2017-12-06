@@ -12,12 +12,19 @@ function twittear(event) {
      var parraf = document.createElement("p");
      var divContainer = document.createElement("div");
      parraf.textContent = text.value;
+     divContainer.id = "container-id";
      divContainer.appendChild(parraf);
      newParraf.appendChild(divContainer);
      divContainer.classList.add("content");
      text.value = "";
      letterCount.value = 140;
      parraf.style.marginLeft = '14px';
+     var f = new Date();
+     newParraf.appendChild(divContainer);
+     var time = divContainer.value = (f.getHours() + ':' + (f.getMinutes()));
+     var msg = parraf.textContent;
+     var timeAndMsg = parraf.textContent + "\n" + time;;
+     divContainer.innerText = timeAndMsg;
    }
 };
 // version 0.0.2
@@ -65,13 +72,13 @@ function autosize(){
 // agregar la hora
 // var tiempo = moment("2016-01-01").format("MMM Do YY");
 // console.log(tiempo);
-boton.addEventListener("click", showHour)
-function showHour(event){
-  momentoActual = new Date();
-  hora = momentoActual.getHours();
-  minuto = momentoActual.getMinutes();
-  segundo = momentoActual.getSeconds();
-
-  printHour = hora + ' : ' + minuto + ' : ' + segundo;
-  document.getElementById('showHour').innerHTML = printHour;
-};
+// boton.addEventListener("click", showHour)
+// function showHour(event){
+//   momentoActual = new Date();
+//   hora = momentoActual.getHours();
+//   minuto = momentoActual.getMinutes();
+//   segundo = momentoActual.getSeconds();
+//
+//   printHour = hora + ' : ' + minuto + ' : ' + segundo;
+//   document.getElementById('showHour').innerHTML = printHour;
+// };

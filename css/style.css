@@ -99,6 +99,11 @@ textarea {
   color: blue;
 }
 
+#container-id {
+  background-color: white;
+  line-height: normal;
+}
+
 .inputs {
   margin-top: -10px;
   background-color: white;
@@ -108,8 +113,7 @@ textarea {
 }
 
 .content {
-  border: 5px;
-  background-color: white;
+  margin-top: 10px;
 }
 
 main {
